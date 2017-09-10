@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+	<%= require('html-loader!./layout/html-head.html') %>
+<body>
+	<!-- 2.0以上的jq版本对ie8不支持，这里为全局引入jq -->
+	<script type='text/javascript' src='https://cdn.bootcss.com/jquery/1.11.3/jquery.min.js'></script>
+
+	<!-- 先加载base.js在加载index.js -->
+<!-- 	注意：只有引入通用模块的时候才需在这里导入base.js，在单独的js文件中require其他的文件时候不需要在这里导入，因为公用的模块被抽离出来了 -->
+<!-- 	<script type='text/javascript' src='../../dist/js/base.js'></script>
+	<script type='text/javascript' src='../../dist/js/index.js'></script> -->
+	hello index fish
+</body>
+</html>
